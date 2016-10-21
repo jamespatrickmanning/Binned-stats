@@ -20,6 +20,7 @@ import matplotlib.cm as cm
 
 SOURCEDIR='driftfvcom_data4/'
 DESTINDIR='driftfvcom_data4/'
+filelist='Flist.csv'
 lath=np.array([])
 lonh=np.array([])
 th=np.array([])
@@ -51,7 +52,7 @@ def sh_bindata(x, y, z, xbins, ybins):
             
     return xb,yb,zb_mean,zb_median,zb_std,zb_num
 
-FList = np.genfromtxt(SOURCEDIR+'FList.csv',dtype=None,names=['FNs'],delimiter=',')
+FList = np.genfromtxt(SOURCEDIR+filelist,dtype=None,names=['FNs'],delimiter=',')
 FNs=list(FList['FNs'])
 
 for k in range(len(FNs)):
