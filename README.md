@@ -1,2 +1,5 @@
 # Binned-stats
-use binned stats to compare drifter and model 
+-Calculating binned statistics for both drifters and model flow fields
+-removing tide
+-vector plot results
+ 
